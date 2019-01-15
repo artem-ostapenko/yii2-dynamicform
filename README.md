@@ -1,5 +1,9 @@
 yii2-dynamicform
 ===================
+Updated library with the following fixes:
+1) Cannot read property 'settings' of undefined & $toclone.clone is not a function : https://github.com/wbraganca/yii2-dynamicform/issues/224
+2) DepDrop fix: https://github.com/wbraganca/yii2-dynamicform/issues/216
+===================
 
 [![Latest Version](https://img.shields.io/github/release/wbraganca/yii2-dynamicform.svg?style=flat-square)](https://github.com/wbraganca/yii2-dynamicform/releases)
 [![Software License](http://img.shields.io/badge/license-BSD3-brightgreen.svg?style=flat-square)](LICENSE.md)
