@@ -215,8 +215,8 @@ class DynamicFormWidget extends \yii\base\Widget
         $js .= '    jQuery(".' .  $this->widgetContainer . '").yiiDynamicForm("deleteItem", '. $this->_hashVar . ", e, jQuery(this));\n";
         $js .= "});\n";
         $view->registerJs($js, $view::POS_READY);
-
-        $js = 'jQuery("#' . $this->formId . '").yiiDynamicForm(' . $this->_hashVar .');' . "\n";
+        
+        $js = 'jQuery("#' . $this->formId . '").on(\'afterInit\', function () {jQuery("#' . $this->formId . '").yiiDynamicForm(' . $this->_hashVar .');});' . "\n";
         $view->registerJs($js, $view::POS_LOAD);
     }
 
